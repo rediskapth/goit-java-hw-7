@@ -1,23 +1,23 @@
 public class Rectangle extends Shape {
-    private double side1;
-    private double side2;
+    private double height;
+    private double width;
 
-    public Rectangle(double side1, double side2) {
-        this.side1 = side1;
-        this.side2 = side2;
+    public Rectangle(double height, double width) {
+        this.height = height;
+        this.width = width;
     }
 
-    public double getSide1() {
-        return side1;
+    public double getHeight() {
+        return height;
     }
 
-    public double getSide2() {
-        return side2;
+    public double getWidth() {
+        return width;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2 * (side1 + side2);
+        return 2 * (height + width);
     }
 
     @Override
